@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    font-family: 'Open Sans',sans-serif;
+    line-height: 1.4;
+    color: black;
+}
+a{
+    color: black;
+}
+ul{
+    list-style: none;
+}
+p{
+    margin: 5px 0;
+    line-height: 1.7;
+}
+section a{
+    color:#fff;
+}
+
+.navbar{
+width: 100%;
+height: auto;
+background-color: #fff;;
+padding: 20px;
+box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
+
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+.navbar li{
+    margin:0 15px;
+    font-weight: bold;
+}
+.navbar a{
+    text-decoration: none;
+    color: #000;
+}
+.navbar a:hover{
+    color:var(--color-primary);
+}
+
+.navbar-nav-left{
+    text-transform: uppercase;
+    flex: 1;
+    margin: left 10px; ;
+}
+.navbar-nav-right li:first-child a{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-cotainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-brand img{
+    width: 50px;
+    height: 60px;
+}
+.navbar-nav-right img{
+    height: 20px;
+    width: 20px;
+    margin-right:10px;
+}
+.navbar-nav-right li:nth-child(2){
+    margin: 0 5px;
+}
+.btn{
+    cursor: pointer;
+ display: inline-block;
+ background: none;
+ border: 1px #000 solid;
+ border-radius: 50px;
+ padding: 7px 16px;
+ line-height: 1.2;
+ text-align: center;
+ text-decoration: none;
+}
+.btn-dark-outline{
+   border-color: #000;
+   color: #000;
+   background-color:#fff;
+}
+.btn-dark-outline:hover{
+   background-color: rgba(0,0,0,0.08);
+}
+.btn-light-outline{
+   border-color: #fff;
+   color: #fff;
+
+}
+.btn-dark{
+   background-color: #000;
+   color: #fff;
+}
+.btn-dark:hover{
+   background-color: #333;
+}
+.box-photo{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/logo-1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative; 
+}
+.text-box{
+    width: 80%;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h4{
+    font-size: 20px;
+}
+.text-box h2{
+    font-size: 30px;
+}
+.text-box p{
+    margin: 20px 0 50px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    border: 1px solid;
+    padding: 5px 18px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;   
+}
+.hero-btn:hover{
+    border:  1px solid #dac893;
+    background: #dac893;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+
+.coffe{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top:100px;
+}
+h5{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.coffe-col{
+    flex-basis: 31%;
+    background: #dbbfbf;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    
+}
+h5{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.coffe-col:hover{
+    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.2);
+}
+
+.coffe-2{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.coffe-2-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.coffe-2-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 105%;
+    width: 105%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(231, 81, 81, 0.7);
+}
+.layer p{
+    width: 105%;
+    font-weight: 300;
+    color: #fff;
+    font-size: 26px;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover p{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.places{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.places-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.places-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.places-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
